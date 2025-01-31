@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>OPC-UA & Logic Engine</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_6.css') }}" />
+</head>
+<body>
+  <div class="main-container">
+    <!-- LEFT PANEL: Logical Ops, Math Ops, OPC Structure -->
+    <div class="left-panel">
+      <ul id="logicalOperations"></ul>
+      <ul id="mathOperations"></ul>
+      <ul id="opc-structure"></ul>
+    </div>
+
+    <!-- RIGHT SIDE: Container for our two canvases + absolutely-positioned boxes -->
+    <div class="canvas-container">
+      <canvas id="logicCanvas"></canvas>
+      <canvas id="linesCanvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Load external JS -->
+  <script src="{{ url_for('static', filename='script_6.js') }}"></script>
+</body>
+</html>
